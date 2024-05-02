@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" href="/assets/css/desktop.css" media="screen and (min-width: 980px)">
+    
+    <title>WisePay Planner</title>
+</head>
+<body>
+    <nav>
+        <picture class="logo">
+            <img src="/assets/images/logo-dark-mode.svg" alt="Logo WisePay Planner para fondos oscuros">
+        </picture>
+    </nav>
+    <header class="general-info">
+        <h1 class="title-lg">Debt and Interest Payment Plan Calculator</h1>
+        <p>Debts can be challenging and scary.</p>
+        <p> In this simple platform, you'll be able to calculate different types of debts in several situations.</p>
+    </header>
+    <main class="main-container">
+        <section class="form-container">
+            <h2 class="title-md">Payment plan simulator</h2>
+            <p>Enter the necessary data to calculate the amount of the monthly payment, effective monthly rate and total interest you will pay</p>
+    
+            <form class="form-debt-calculator" action="#">
+                
+                <label for="total-amount">
+                    <span>Total amount <span class="required">*</span></span>
+                    <br>
+                    <input id="total-amount" type="number" class="input" required placeholder="$">
+                </label>
+                <label for="annual-interest-rate">
+                    <span>Annual interest rate <span class="required">*</span></span>
+                    <br>
+                    <input id="annual-interest-rate" type="text" class="input" required placeholder="%">
+                </label>
+                <label for="payment-period-in-months">
+                    <span>Payment period in months <span class="required">*</span></span>
+                    <br>
+                    <input id="payment-period-in-months" type="number" class="input" required placeholder="0">
+                </label>
+                
+                <input type="submit" value="Calcular" class="primary-button">
+            </form>
+        </section>
+    
+        <aside class="total-results-container inactive">
+            <h2 class="title-md">Totals</h2>
+            <p>Details about your debt payments, if you have doubts about any of them, select the help.</p>
+    
+            <div class="result-container">
+                <p class="description-main-result">Amount of monthly payment</p>
+                <p class="big-num" id="amount-monthly-payment">-</p>
+            </div>
+    
+            <div class="divider-line"></div>
+            
+            <div class="result-container">
+                <p class="description-secondary-result">Total interest</p>
+                <p class="med-num" id="total-interest">-</p>
+            </div>
+
+            <div class="result-container">
+                <p class="description-secondary-result">Effective monthly rate</p>
+                <p class="med-num" id="effective-monthly-rate">-</p>
+            </div>
+    
+        </aside>
+    </main>
+    <section class="message-container inactive">
+        <h2 id="advice-title"></h2>
+        <p id="advice-content"></p>
+    </section>
+    
+    <script defer src="/assets/js/main.js"></script>
+</body>
+</html>

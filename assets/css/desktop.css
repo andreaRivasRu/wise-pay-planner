@@ -1,0 +1,22 @@
+.general-info {
+    padding-top: 4.8rem;
+    padding-bottom: 3.6rem;
+} 
+
+.general-info h1, p {
+    max-width: 50rem;
+}
+
+.main-container {
+    justify-content:center;
+}
+
+.form-container {
+    max-width: 55rem;
+}
+
+.total-results-container {
+    background-color: var(--dark-indigo);
+    border-radius: 1.6rem;
+    max-width: 30rem;
+}

@@ -1,0 +1,21 @@
+.general-info h1, p {
+    max-width: 40rem;
+}
+
+html .main-container > .inactive {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    background-color: var(--dark-background);
+    display: flex;
+    padding: 2.4rem;
+    gap: 1.6rem;
+}
+
+.form-container {
+    width: 75%;
+    min-width: 40rem;
+    border-radius: 1.6rem;
+}
